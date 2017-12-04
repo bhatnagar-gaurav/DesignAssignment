@@ -1,7 +1,7 @@
 # Design Assignment
 
 In this repositiory I have provided the solution for the first assignment.
-Please go through the projects :
+Please go through the project :
 
 **1)  Division Fragment Screen:**
     This is the first screen shown to the user when he launches the application and is requird to enter the number to be multiplied.
