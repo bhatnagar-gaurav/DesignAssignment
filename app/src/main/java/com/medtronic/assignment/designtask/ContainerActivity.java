@@ -70,7 +70,6 @@ public class ContainerActivity extends Activity {
                 Activity.MODE_PRIVATE));
         ivIndicator1.setVisibility(View.VISIBLE);
         ivIndicator2.setVisibility(View.VISIBLE);
-        changeFragment(DIVISION);
         FragmentManager fragmentManager = getFragmentManager();
         fragmentManager.addOnBackStackChangedListener(new FragmentManager.OnBackStackChangedListener() {
             @Override
@@ -83,6 +82,7 @@ public class ContainerActivity extends Activity {
 
             }
         });
+        changeFragment(DIVISION);
         setActionBar();
     }
 
@@ -206,4 +206,16 @@ public class ContainerActivity extends Activity {
         view.setImageResource(resId);
     }
 
+    @Override
+    public void onBackPressed() {
+        if (getFragmentManager().getBackStackEntryCount() == 0){
+            super.onBackPressed();
+            Utilityfunctions.clearPreferences(getAppPreferences());
+            finish();
+        }
+        else{
+            getFragmentManager().popBackStackImmediate();
+        }
+
+    }
 }
