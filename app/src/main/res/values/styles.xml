@@ -1,0 +1,110 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/orange</item>
+        <item name="android:actionBarStyle">@style/WhiteActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow</item>
+        <item name="android:switchTextAppearance">@style/SwitchTextAppearance</item>
+    </style>
+
+    <style name="CustomizedContainerTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/orange</item>
+        <item name="android:actionBarStyle">@style/OrangeActionBar</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlow_white</item>
+        <item name="android:switchTextAppearance">@style/SwitchTextAppearance</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyleWhite</item>
+    </style>
+
+
+    <!-- ActionBar style -->
+    <style name="WhiteActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/white</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+    </style>
+
+    <style name="OrangeActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/dark_orange</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle_white</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle_white" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:titleTextStyle">@style/ABTitleTextStyle</item>
+    </style>
+
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/medium_orange</item>
+        <item name="android:titleTextStyle">@style/ABTitleTextStyle</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyleWhite" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:titleTextStyle">@style/ABTitleTextStyle</item>
+    </style>
+
+    <style name="ABTitleTextStyle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_overflow</item>
+    </style>
+
+    <style name="OverFlow_white" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_three_dot</item>
+    </style>
+
+    <!-- Switch style -->
+    <style name="SwitchTextAppearance" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- View styles -->
+    <style name="WhiteInputBox">
+        <item name="android:background">@drawable/white_to_grey_selector</item>
+        <item name="android:layout_marginLeft">@dimen/margin_border</item>
+        <item name="android:layout_marginRight">@dimen/margin_border</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">@dimen/min_input_box_height</item>
+        <item name="android:padding">@dimen/margin_border</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_normal</item>
+    </style>
+
+    <style name="OrangeButton">
+        <item name="android:layout_marginLeft">@dimen/margin_border</item>
+        <item name="android:layout_marginRight">@dimen/margin_border</item>
+        <item name="android:layout_marginTop">@dimen/margin_border</item>
+        <item name="android:layout_marginBottom">@dimen/margin_border</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/button_default</item>
+    </style>
+
+
+    <style name="WhiteHeader">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginLeft">@dimen/margin_border</item>
+        <item name="android:layout_marginRight">@dimen/margin_border</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_xlarge</item>
+    </style>
+
+    <style name="LightRedLine">
+        <item name="android:background">@color/very_light_red</item>
+        <item name="android:layout_marginLeft">@dimen/margin_border</item>
+        <item name="android:layout_marginRight">@dimen/margin_border</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+</resources>

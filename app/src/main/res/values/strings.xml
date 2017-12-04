@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Design_Assignment</string>
+
+    <string name="exit">Exit</string>
+    <string name="action_bar_title">Welcome</string>
+    <string name="container_title">Please enter a valid number to multiply</string>
+    <string name="container_title_divide">Please enter a valid number to divide</string>
+    <string name="hint_number">Number</string>
+
+    <string name="multiply_button">Multiply</string>
+    <string name="divide_button">Divide</string>
+    <string name="empty_field_error">Field Cannot be empty</string>
+    <string name="no_screen_error">Please enter a valid number so that next screen can be shown.</string>
+
+</resources>

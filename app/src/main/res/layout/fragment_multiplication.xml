@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_number_divide"
+        style="@style/WhiteInputBox"
+        android:layout_marginBottom="@dimen/margin_border"
+        android:layout_marginTop="@dimen/margin_border"
+        android:hint="@string/hint_number"
+        android:inputType="number"
+        android:layout_width="@dimen/input_box_customized_width"/>
+
+    <View style="@style/LightRedLine" />
+
+    <Button
+        android:id="@+id/buttonDivide"
+        style="@style/OrangeButton"
+        android:layout_gravity="center"
+        android:text="@string/divide_button"
+        android:layout_width="@dimen/button_customized_width"/>
+
+</LinearLayout>
